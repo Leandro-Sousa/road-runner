@@ -1,7 +1,6 @@
-FROM debian:latest
+FROM alpine:latest
 
-RUN apt-get update
-RUN apt-get install default-jre -y
+RUN apk add openjdk8-jre
 RUN mkdir /app
 
 WORKDIR /app
